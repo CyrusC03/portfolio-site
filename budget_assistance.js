@@ -1,0 +1,11 @@
+var startUp="EZ Start";
+var iniCapital=5000;
+var monthRevenue=4000;
+var monthExpense=1000;
+var netCashFlow=monthRevenue-monthExpense;
+var currentBalance=iniCapital+netCashFlow;
+var profitable = Boolean(netCashFlow>0);
+console.log(`Start up Name:${startUp}`);
+console.log(`Net monthly cash Flow: ${netCashFlow}`);
+console.log(`Current Balance: ${currentBalance}`);
+console.log(`Profitability:${profitable}`);
