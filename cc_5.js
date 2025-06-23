@@ -1,7 +1,7 @@
 //step2
 const Employee1 = {name:"Bob Reed", hourlyRate: 10.00, hoursWorked: 20};
 const Employee2 = {name:"Dave Port", hourlyRate: 20.00, hoursWorked: 40};
-const Employee3 = {name:"Lee ", hourlyRate: 25.00, hoursWorked: 50};
+const Employee3 = {name:"John Lee", hourlyRate: 25.00, hoursWorked: 50};
 const Employee4 = {name:"Kim Johnson", hourlyRate: 15.00, hoursWorked: 25};
 let employees=[Employee1,Employee2,Employee3,Employee4];
 console.log("step 2 completed");
@@ -27,8 +27,19 @@ function calculateOvertimePay(rate, hours){
 }
 console.log("step 4 completed");
 //step 5
-calculateTaxes(grossPay) {
+function calculateTaxes(grossPay) {
     return(grosspay*0.15);
 }
 console.log("step 5 completed");
 //step 6
+function processPayroll(employee) {
+    var employeePay = {name:"", basePay: 0, overtimePay:0, grossPay: 0, netPay:0};
+    employeePay.name = employee.name;
+    employeePay.basePay=calculateBasePay(employee.rate,employee.hours);
+    employeePay.overtimePay=calculateOvertimePay(employee.rate,employee.hours);
+    var grossPay=employeePay.basePay+employeePay.overtimePay;
+    employeePay.grossPay=grossPay;
+    employeePay.netPay=grossPay-calculateTaxes(grossPay);
+    return employeePay;
+}
+console.log("step 6 completed");
