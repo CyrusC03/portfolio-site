@@ -39,7 +39,7 @@ const employee4 = new Employee("Mike Banning", "Operations");
 const employee5 = new Employee("Matthew Bradley", "Information Technology");
 const employee6 = new Employee("Liam Niko", "Information Technology");
 const manager1 = new Manager("Cyrus Chinoy", "Operations", 3);
-const manager2 = new Manager("Bradley Davis", "Information Technology");
+const manager2 = new Manager("Bradley Davis", "Information Technology", 4);
 
 console.log("step 4 completed");
 
