@@ -67,10 +67,20 @@ class Company {
     }
 }
 
-console.log("step 6 completed");
+console.log("step 5 completed");
 
 //step 6
 
-let employees=[Employee1,Employee2,Employee3];
+let employees=[employee1,employee2,employee3];
 
+const company = new Company(employees);
 
+company.addEmployee(employee4);
+company.addEmployee(employee5);
+company.addEmployee(employee6);
+company.addEmployee(manager1);
+company.addEmployee(manager2);
+
+company.listEmployees();
+
+console.log("step 6 completed");
