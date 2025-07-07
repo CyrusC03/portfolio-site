@@ -15,22 +15,22 @@
 <h1>EZ Start</h1>
 <nav>
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Services</a></li>
-<li><a href="#">Contact</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
 </header>
 
 <!-- my main with hero section and call-to-action -->
 <main>
-<section class="hero">
+<section id="home" class="hero">
 <h2 id="cta">Discover What EZ Start Can Do for You</h2>
 <p>We help small businesses grow with smart, modern solutions.</p>
 </section>
 
 <!-- the section with three services -->
-<section class="services">
+<section id="services" class="services">
 <div class="service">
 <h3>Web Design</h3>
 <p>Creating a professional and responsive websites for your business is what we do.</p>
@@ -44,6 +44,12 @@
 <p>Create a strong brand identity that stands out from the rest.</p>
 </div>
 </section>
+
+<section id="contact" class="cta-form">
+    <h3>Update the Call to Action</h3>
+    <input type="text" id="cta-input" placeholder="Enter new CTA.." />
+    <button id="update-cta">Update</button>
+</section>
 </main>
 
 <!-- the footer with my contact information -->
@@ -51,5 +57,6 @@
 <p>Contact us: contact@ezstart.com</p>
 </footer>
 
+<script src="cc_7.js"></script>
 </body>
 </html>
