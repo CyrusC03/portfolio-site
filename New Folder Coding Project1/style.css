@@ -5,9 +5,10 @@ margin: 0;
 padding: 0;
 }
 
+/* fixed background*/
 body {
 font-family: 'Segoe UI', sans-serif;
-background-color: #f0f4f8;
+background: linear-gradient(to right, #f0f4f8, #d9e2ec); 
 padding: 2rem;
 }
 
@@ -80,4 +81,18 @@ border-radius: 4px;
 font-size: 0.85rem;
 margin-top: 0.25rem;
 z-index: 10;
+}
+/* The feedback Display Final Revision*/
+#feedback-display {
+margin-top: 2rem;
+padding-top: 1rem;
+border-top: 2px solid #ddd;
+}
+
+.feedback-entry {
+background-color: #f9f9f9;
+border-left: 4px solid #004aad;
+padding: 1rem;
+margin-top: 1rem;
+border-radius: 5px;
 }
