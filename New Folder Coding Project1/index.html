@@ -1,0 +1,46 @@
+<!-- STEP 2 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>User Feedback Form</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main>
+<h1>User Feedback Form</h1>
+
+<!-- Feedback Forms -->
+<form id="feedback-form">
+<div class="form-group">
+<label for="username">Name</label>
+<input type="text" id="username" name="username" />
+<span class="tooltip" id="tooltip-username">Enter your full name</span>
+</div>
+
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" id="email" name="email" />
+<span class="tooltip" id="tooltip-email">Enter a valid email address</span>
+</div>
+
+<div class="form-group">
+<label for="comments">Comments</label>
+<textarea id="comments" name="comments" rows="4"></textarea>
+<p id="char-count">Character count: 0</p>
+</div>
+
+<button type="submit" id="submit-btn">Submit Feedback</button>
+</form>
+
+<!-- feedback entry displays -->
+<section id="feedback-display">
+<h2>Submitted Feedback</h2>
+</section>
+</main>
+
+<script src="cp_1.js"></script>
+</body>
+</html>
