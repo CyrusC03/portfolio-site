@@ -48,9 +48,7 @@ function displayProducts(products) {
     card.innerHTML = `
 
       <img src="${image[0].url}" alt="${name}" />
-
       <h3>${name}</h3>
-
       <p>$${(price / 100).toFixed(2)}</p>
 
     `;
@@ -60,4 +58,9 @@ function displayProducts(products) {
 
   });
 
+function handleError(error) {
+console.error(`An error occurred: ${error.message}`);
+}
+
+fetchProductsAsync();
 }
